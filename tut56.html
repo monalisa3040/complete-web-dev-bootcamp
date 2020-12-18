@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getelementbyid | getelementbyclassname</title>
+</head>
+
+<style>
+    *{
+        text-align: center;
+        margin-top: 100px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .btn{
+        border-radius: 100%;
+    }
+    .previous{
+        color:#000;
+        background-color: #ccc;
+    }
+    .next{
+        color:#000;
+        background-color: #ccc;
+    }
+    .slides{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <a href="#" class="previous btn">&laquo;</a>
+        <img src="https://wallpapercave.com/wp/wp5114631.jpg" alt="slide1" class="slides">
+        <img src="https://i.pinimg.com/originals/da/b2/d4/dab2d405730473923d33a32e814950cd.jpg" alt="slide2" class="slides">
+        <img src="https://i.pinimg.com/originals/ff/3f/aa/ff3faac6572244919cd3acd51bb50d14.jpg" alt="slide3" class="slides">
+        <a href="#" class="next btn">&raquo;</a>
+    </div>
+
+
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>contact us</li>
+            <li>about us</li>
+        </ul>
+    </div>
+    
+</body>
+
+<script>
+
+    let main=document.getElementById("main");
+    console.log(main);
+    let nav = document.getElementById("nav");
+    console.log(nav);
+
+    let sel=document.querySelectorAll("#nav>li");
+    console.log(sel);
+
+    // let slideShow = document.getElementsByClassName("slides");
+    // console.log(slideShow[0]);
+    // slideShow[0].innerHTML=slideShow[1]
+    // console.log(slideShow[0]);
+    
+    // console.log(slideShow[1]);
+    // console.log(slideShow);
+    
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myStopwatch</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let event = new Date();
+    event.setMilliseconds(0);
+    console.log(event.getMilliseconds());
+    function stopwatch(){
+        for(let i=0 ; i<30 ; i++){
+            console.log(event.setMilliseconds(i));
+        }
+    }
+    // setInterval(stopwatch,1000);
+</script>
+</html>
+
+
+
+<!-- function stateChange(newState) {
+    setTimeout(function () {
+        if (newState == -1) {
+            alert('VIDEO HAS STOPPED');
+        }
+    }, 5000);
+} -->

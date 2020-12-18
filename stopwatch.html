@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myStopwatch</title>
+</head>
+<body>
+    <div class="container">
+        Stopwatch: <span id="mili"></span>
+    </div>
+</body>
+<script>
+
+    let event = new Date();
+
+    // console.log(event.getMilliseconds());
+    // expected output: 0
+    
+    event.setMilliseconds(0);
+    
+    console.log(event.getMilliseconds());
+    // expected output: 456    
+
+
+    setInterval(() => {
+        for(let i=0 ; i>-1 ; i++){
+            console.log(event+i);
+        }
+    },1000)
+
+    
+    // event = new Date();
+    // console.log(event.getMilliseconds());
+
+
+
+    // setTimeout(() => {
+    //     console.log("We are inside settimeout");
+    // }, 3000);
+
+
+    // let d=new Date();
+    // console.log(d);
+    // let milisec=d.setMilliseconds(0);
+    // console.log(milisec);
+    // // function stopwatch(){
+    // //     let d=new Date();
+    // //     document.getElementById("mili").innerHTML= d.getMilliseconds();
+    // // }
+    // // setInterval(stopwatch,1000);
+    
+    
+    
+    
+    // // function stopWatch(){
+    // //     console.log(d);
+    // // }
+    // // setInterval(stopWatch,1000);
+
+    // // let greet =  ()=> {
+    // //     console.log('Good morning');
+    // // }
+
+    // // setTimeout(() => {
+    // //     console.log("We are inside settimeout");
+    // // }, 3000);
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myClock</title>
+</head>
+<style>
+    .container{
+        border: 2px solid #500;
+        border-radius: 20px;
+        background-color: #ffa;
+        text-align: center;
+        height: 100px;
+        padding: 100px;
+    }
+    /* #time{
+        
+
+    } */
+</style>
+<body>
+    <div class="container">
+        The time right now is: <strong><span id="time"></span> </strong> 
+
+    </div>
+</body>
+<script>
+    function updateTime(){
+        let d = new Date();
+        document.getElementById("time").innerHTML= d;
+    }
+    setInterval(updateTime,1000);
+</script>
+</html>

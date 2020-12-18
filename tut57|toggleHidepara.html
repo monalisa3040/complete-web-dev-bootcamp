@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listening to events </title>
+</head>
+<style>
+    .btn{
+        color: #fff;
+        background-color: #d52;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Temporibus laudantium blanditiis odio consectetur exercitationem, 
+        consequuntur qui iusto corrupti debitis. Fugiat exercitationem nostrum vitae. 
+        Reiciendis eveniet, inventore minus at facere officia. Dignissimos veniam inventore 
+        laborum maxime veritatis voluptates explicabo esse, fuga ab nemo neque provident, itaque excepturi error 
+        similique tempora odio. Quam in deserunt velit repellendus dolor! Totam, repellat nemo? Rem qui suscipit ea quidem
+        repellat hic aliquam voluptates sit? Perspiciatis totam quis, eos iure, similique quae inventore repudiandae at dicta magnam quo facilis. H
+        ic est et architecto error incidunt possimus laborum nobis deleniti necessitatibus blanditiis? Fuga provident deleniti quisquam autem!</p>
+    <button class="btn" onclick="toggleHide()">show/hide</button>
+</body>
+
+<script>
+
+  function toggleHide(){
+   
+    let para = document.getElementById("para");
+    if(para.style.display!="none"){
+        para.style.display="none";
+    }
+    else{
+        para.style.display="block";
+    }
+} 
+
+</script>
+</html>
